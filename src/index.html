@@ -221,6 +221,62 @@
                 </li>
               </ul>
             </li>
+            <li class="nav-item dropdown">
+              <a class="dropdown-toggle" href="javascript:void(0);">
+                <span class="icon-holder">
+                    <i class="c-purple-500 ti-map"></i>
+                  </span>
+                <span class="title">Admin (Diagnosis)</span>
+                <span class="arrow">
+                    <i class="ti-angle-right"></i>
+                  </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="google-maps.html">Steering angle </a>
+                </li>
+                <li>
+                  <a href="vector-maps.html">Braking Level</a>
+                </li>
+                <li>
+                  <a href="vector-maps.html">Acceleration</a>
+                </li>
+                <li>
+                  <a href="vector-maps.html">Software Kill Switch</a>
+                </li>
+                <li>
+                  <a href="vector-maps.html">Battery Voltages</a>
+                </li>
+                <li>
+                  <a href="vector-maps.html">Vehicle Controller Health</a>
+                </li>
+                <li>
+                  <a href="vector-maps.html">Error Flags</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="dropdown-toggle" href="javascript:void(0);">
+                <span class="icon-holder">
+                    <i class="c-purple-500 ti-map"></i>
+                  </span>
+                <span class="title">Developer Level</span>
+                <span class="arrow">
+                    <i class="ti-angle-right"></i>
+                  </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="google-maps.html">Motor Drive Parameter</a>
+                </li>
+                <li>
+                  <a href="vector-maps.html">IPC Data Between Processes</a>
+                </li>
+                <li>
+                  <a href="vector-maps.html">Process and System Logs</a>
+                </li>
+              </ul>
+            </li>
             <!-- <li class="nav-item dropdown">
               <a class="dropdown-toggle" href="javascript:void(0);">
                 <span class="icon-holder">
@@ -519,7 +575,7 @@
               <div class="masonry-item  w-100">
                 <div class="row gap-20">
                   <!-- #Toatl Visits ==================== -->
-                  <div class='col-md-3'>
+                  <div class='col-md-2'>
                     <div class="layers bd bgc-white p-20">
                       <div class="layer w-100 mB-10">
                         <h6 class="lh-1">Vechicle Speed</h6>
@@ -530,7 +586,7 @@
                             <span id="sparklinedash"></span>
                           </div> -->
                           <div class="peer">
-                            <span class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-green-50 c-green-500">20 KMPH</span>
+                            <span class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-blue-50 c-blue-500">20 KMPH</span>
                           </div>
                         </div>
                       </div>
@@ -538,7 +594,7 @@
                   </div>
 
                   <!-- #Total Page Views ==================== -->
-                  <div class='col-md-3'>
+                  <div class='col-md-2'>
                     <div class="layers bd bgc-white p-20">
                       <div class="layer w-100 mB-10">
                         <h6 class="lh-1">System Health</h6>
@@ -549,7 +605,7 @@
                             <span id="sparklinedash2"></span>
                           </div> -->
                           <div class="peer">
-                            <span class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-green-50 c-green-500">Good</span>
+                            <span class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-blue-50 c-blue-500">Good</span>
                           </div>
                         </div>
                       </div>
@@ -557,7 +613,7 @@
                   </div>
 
                   <!-- #Unique Visitors ==================== -->
-                  <div class='col-md-3'>
+                  <div class='col-md-2'>
                     <div class="layers bd bgc-white p-20">
                       <div class="layer w-100 mB-10">
                         <h6 class="lh-1">Battery Percentage</h6>
@@ -568,18 +624,53 @@
                             <span id="sparklinedash3"></span>
                           </div> -->
                           <div class="peer">
-                            <span class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-purple-50 c-purple-500">77%</span>
+                            <span class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-blue-50 c-blue-500">77%</span>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-
-                  <!-- #Bounce Rate ==================== -->
-                  <div class='col-md-3'>
+                  <!-- #Autonomous Mode (ON/OFF) ==================== -->
+                  <div class='col-md-2'>
                     <div class="layers bd bgc-white p-20">
                       <div class="layer w-100 mB-10">
-                        <h6 class="lh-1">Obstecal</h6>
+                        <h6 class="lh-1">Autonomous Mode</h6>
+                      </div>
+                      <div class="layer w-100">
+                        <div class="peers ai-sb fxw-nw">
+                          <!-- <div class="peer peer-greed">
+                            <span id="sparklinedash4"></span>
+                          </div> -->
+                          <div class="peer">
+                            <span class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-blue-50 c-blue-500">ON</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #Gear (F, N, R( not to be  used))  ==================== -->
+                  <div class='col-md-2'>
+                    <div class="layers bd bgc-white p-20">
+                      <div class="layer w-100 mB-10">
+                        <h6 class="lh-1">Gear</h6>
+                      </div>
+                      <div class="layer w-100">
+                        <div class="peers ai-sb fxw-nw">
+                          <!-- <div class="peer peer-greed">
+                            <span id="sparklinedash4"></span>
+                          </div> -->
+                          <div class="peer">
+                            <span class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-blue-50 c-blue-500">F</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #Bounce Rate ==================== -->
+                  <div class='col-md-2'>
+                    <div class="layers bd bgc-white p-20">
+                      <div class="layer w-100 mB-10">
+                        <h6 class="lh-1">Obstacle</h6>
                       </div>
                       <div class="layer w-100">
                         <div class="peers ai-sb fxw-nw">
@@ -609,47 +700,47 @@
                         </div>
                       </div>
                     </div>
-                    <!-- <div class="peer bdL p-20 w-30p@lg+ w-100p@lg-">
+                    <div class="peer bdL p-20 w-30p@lg+ w-100p@lg-">
                       <div class="layers">
                         <div class="layer w-100">
-                          # Progress Bars
+                          <!-- # Live Feed From Camera -->
                           <div class="layers">
                             <div class="layer w-100">
-                              <h5 class="mB-5">100k</h5>
-                              <small class="fw-600 c-grey-700">Visitors From USA</small>
+                              <h5 class="mB-5">Live Feed From Camera</h5>
+                              <!-- <small class="fw-600 c-grey-700">Visitors From USA</small>
                               <span class="pull-right c-grey-600 fsz-sm">50%</span>
                               <div class="progress mT-10">
-                                <div class="progress-bar bgc-deep-purple-500" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%;"> <span class="sr-only">50% Complete</span></div>
+                                <div class="progress-bar bgc-deep-purple-500" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%;"> <span class="sr-only">50% Complete</span></div> -->
                               </div>
                             </div>
-                            <div class="layer w-100 mT-15">
+                            <!-- <div class="layer w-100 mT-15">
                               <h5 class="mB-5">1M</h5>
                               <small class="fw-600 c-grey-700">Visitors From Europe</small>
                               <span class="pull-right c-grey-600 fsz-sm">80%</span>
                               <div class="progress mT-10">
                                 <div class="progress-bar bgc-green-500" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:80%;"> <span class="sr-only">80% Complete</span></div>
                               </div>
-                            </div>
-                            <div class="layer w-100 mT-15">
+                            </div> -->
+                            <!-- <div class="layer w-100 mT-15">
                               <h5 class="mB-5">450k</h5>
                               <small class="fw-600 c-grey-700">Visitors From Australia</small>
                               <span class="pull-right c-grey-600 fsz-sm">40%</span>
                               <div class="progress mT-10">
                                 <div class="progress-bar bgc-light-blue-500" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:40%;"> <span class="sr-only">40% Complete</span></div>
                               </div>
-                            </div>
-                            <div class="layer w-100 mT-15">
+                            </div> -->
+                            <!-- <div class="layer w-100 mT-15">
                               <h5 class="mB-5">1B</h5>
                               <small class="fw-600 c-grey-700">Visitors From India</small>
                               <span class="pull-right c-grey-600 fsz-sm">90%</span>
                               <div class="progress mT-10">
                                 <div class="progress-bar bgc-blue-grey-500" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:90%;"> <span class="sr-only">90% Complete</span></div>
                               </div>
-                            </div>
+                            </div> -->
                           </div>
 
-                          # Pie Charts
-                          <div class="peers pT-20 mT-20 bdT fxw-nw@lg+ jc-sb ta-c gap-10">
+                          <!-- # Pie Charts -->
+                          <!-- <div class="peers pT-20 mT-20 bdT fxw-nw@lg+ jc-sb ta-c gap-10">
                             <div class="peer">
                               <div class="easy-pie-chart" data-size='80' data-percent="75" data-bar-color='#f44336'>
                                 <span></span>
@@ -668,10 +759,10 @@
                               </div>
                               <h6 class="fsz-sm">Bounce Rate</h6>
                             </div>
-                          </div>
+                          </div> -->
                         </div>
                       </div>
-                    </div> -->
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1092,7 +1183,7 @@
 
         <!-- ### $App Screen Footer ### -->
         <footer class="bdT ta-c p-30 lh-0 fsz-sm c-grey-600">
-          <span>Bharat Forge Ltd. <a href="https://colorlib.com" target='_blank' title="Colorlib">Kalany Group</a>. All rights reserved.</span>
+          <span>AI Incubation Center <a href="https://colorlib.com" target='_blank' title="Colorlib">Eight Member Team</a>. All rights reserved.</span>
         </footer>
       </div>
     </div>
